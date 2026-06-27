@@ -1403,7 +1403,8 @@
             gap: 12px;
             width: min(1160px, 100%);
             margin: 0 auto;
-            transform: translateX(-8px);
+            transform: translateX(0); /* hentikan pergeseran global */
+            padding-left: 8px; /* beri ruang kiri agar gambar tidak menempel */
             flex: 1;
             min-height: 0;
             align-items: stretch;
@@ -1675,9 +1676,9 @@
             max-height: 200px;
             object-fit: contain;
             display: block;
-            margin: 8px 0 8px 6px; /* geser sedikit ke kiri */
-            width: calc(100% - 6px);
-            max-width: 96%;
+            margin: 8px 0 8px 12px; /* geser sedikit ke kiri */
+            width: calc(100% - 12px);
+            max-width: 94%;
         }
 
         .description-card,
